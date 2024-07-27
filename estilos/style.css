@@ -4,22 +4,25 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 .coluna {
     width: 340px;
-    background-color: dimgray;
+    background-color: rgb(75, 0, 15);
     padding: 20px;
     position: fixed;
     height: 100%;
-    box-shadow: 2px 0 5px   rgba(0, 0, 0, 0.801);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.conteudo {
+.botao {
+    color: black;
     padding: 20px;
-    height: 2000px; /* Simulando conteúdo longo */
+    margin: 10px;
+    border-radius: 10px;
+        
 }
 
 .conteudo-janela {
@@ -32,8 +35,7 @@
 
 .section {
     height: 100%; /* Altura de cada seção */
-    background-color: #eaeaea;
-    border: 1px solid #ccc;
+    background-color: rgb(43, 0, 9);
     display: flex;
     align-items: center;
     justify-content: center;
