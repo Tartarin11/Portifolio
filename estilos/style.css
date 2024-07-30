@@ -21,6 +21,12 @@ body {
     justify-content: flex-end;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.473)   
 }
+section img {
+    width: 300px;
+    border-radius: 50%;
+    border: 12px solid rgba(220, 20, 60, 0.767);
+    transform: translate(50px, -80px);
+}
 
 .botao {
     padding: 32px;
@@ -34,12 +40,19 @@ body {
     font-weight: 500;
     font-size: 25px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 60px;
 }
 
 .botao:hover {
     background-color: crimson;
     transform: translateY(-10px);
     box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.623);
+}
+
+.material-icons {
+    font-size: 38px;
+    margin-right: 5px;
+    transform: translateY(5px);
 }
 
 .conteudo-janela {
