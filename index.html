@@ -1,43 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
+    <title>Portifolio 222</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <main>
         <nav>
-            <section class="coluna">
-                <img src="imagens/deadpool.jpg" alt="deadpool-icon">
+            <section id="coluna">
+                <img src="imagens/gatito.jpg" alt="gatito">
 
-                <button onclick="scrollToSection('section1')" class="botao">
-                    <p><i class="material-icons">person</i> Sobre Mim</p>
-                </button>
-                <button onclick="scrollToSection('section2')" class="botao">
-                    <p><i class="material-icons">wysiwyg</i> Experiencia</p>
-                </button>
-                <button onclick="scrollToSection('section3')" class="botao">
-                    <p><i class="material-icons">dynamic_feed</i> Projetos </p>
-                </button>
+                <div id="social-links">
+                    <a href="https://github.com/Tartarin11" target="_blank"><img src="imagens/github.png" alt="github"></a>
+                    <a href="https://www.linkedin.com/in/davi-tartarini-07b18531a/"target="_blank"><img src="imagens/linkedin.png" alt="linkedin"></a>
+                    <a href="#" target="_blank"><img src="imagens/whatsapp.png" alt="whatsapp"></a>
+                </div>
+
+                <button class="botoes" onclick="scrollToSection('section-sobre')"><i class="material-icons">person</i> Sobre</button>
+                <button class="botoes" onclick="scrollToSection('section-experiencia')"><i class="material-icons">wysiwyg</i> Experiencia</button>
+                <button class="botoes" onclick="scrollToSection('section-projetos')"><i class="material-icons">dynamic_feed</i> Projetos</button>
             </section>
         </nav>
-        <section class="conteudo">
-            <div class="conteudo-janela">
-                <div id="section1" class="section">
-                    <h1>Davi Tartarini da Silva</h1>
-                    <p>Óla, sou o Davi, um progamador iniciante em busca da minha primeira oportunidade como um Dev Front-End. Tenho pouca experiencia como desenvolvedor, mas estou disposto a aprender e evoluir. </p>
+
+        <section id="conteudo">
+            <section id="section-sobre" class="section">
+                <h1>Davi Tartarini da Silva</h1>
+                <p>Óla, sou o Davi, tenho 19 anos, sou um progamador iniciante em busca da minha primeira oportunidade como um Dev Front-End. Tenho pouca experiencia como desenvolvedor, mas estou disposto a aprender e evoluir. </p>
+
+                <div id="tecnologias">
+                    <img src="imagens/html-5.png" alt="html">
+                    <img src="imagens/css-3.png" alt="css">
+                    <img src="imagens/js.png" alt="javascript">
                 </div>
-                <div id="section2" class="section">
-                    <h1>Experiencia</h1>
-                </div>
-                
-                <div id="section3" class="section">
-                    <h1>Projetos</h1>
-                </div>
-            </div>
+
+            </section>
+            <section id="section-experiencia" class="section">
+                <h1>EXPERIENCIA</h1>
+            </section>
+            <section id="section-projetos" class="section">
+                <h1>PROJETOS</h1>
+            </section>
         </section>
     </main>
     <script>
