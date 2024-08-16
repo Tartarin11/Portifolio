@@ -126,7 +126,10 @@ body, html {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: #0f172a linear-gradient(to right, transparent 50%, var(--color) 0 ); /*-------*/
+    background: conic-gradient(
+        var(--color) calc(var(--value) * 1%),
+        rgb(75, 0, 15) 0
+    );
 }
 
 .barra-progresso h3 {
@@ -151,21 +154,11 @@ body, html {
     font-size: 15px;
 }
 
-.barra-progresso::before {
-    content: "";
-    display: block;
-    height: 100%;
-    margin-left: 50%; /*-------*/
-    transform-origin: left; /*-------*/
-    border-radius: 0 100% 100% 0/50%;
-    background-color: var(--color); /*-------*/
-    transform: rotate(calc(((var(--value) - 50) * 0.01turn))); /*-------*/
-}
 
 .barra-progresso::after {
     content: "";
     position: absolute;
     inset: 8px;
     border-radius: 50%;
-    background: #0f172a;
+    background:rgb(75, 0, 15);
 }
