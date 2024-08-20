@@ -109,7 +109,7 @@ body, html {
 
 }
 
-#tecnologias {
+#container-barra-progresso {
     width: 500px;
     position: absolute;
     left: 50px;
@@ -162,4 +162,31 @@ body, html {
     inset: 8px;
     border-radius: 50%;
     background:rgb(75, 0, 15);
+}
+
+#container-tecnologias {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.tecnologia {
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.500);
+    padding: 30px;
+}
+
+.tecnologia img {
+    border-radius: 10%;
+    margin: 0px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.tecnologia ul {
+    
+}
+
+.tecnologia ul li {
+    line-height: 40px;
 }
