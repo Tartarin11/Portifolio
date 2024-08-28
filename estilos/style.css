@@ -17,7 +17,7 @@ body, html {
 #coluna {
     position: fixed;
     background-color: rgb(75, 0, 15);
-    width: 230px;
+    width: 215px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@ body, html {
 
 #social-links {
     align-self: center;
-    margin: 40px;
+    margin: 30px;
 }
 
 #social-links img {
@@ -51,28 +51,29 @@ body, html {
 }
 
 .botoes {
-    padding: 15px;
-    margin: 11px;
-    width: 185px;
+    padding: 0px;
+    margin: 10px;
+    width: 150px;
+    height: 50px;
     background-color: rgb(109, 0, 22);
     border: 1px crimson solid;
     border-radius: 15px;
     cursor: pointer;
     color: white;
-    font-size: 18px;
+    font-size: 20px; 
     align-self: center;
     transition: transform 0.3s, background-color 0.3s;
+}
+
+.material-icons {
+    font-size: 10px;
+    transform: translateY(3px);
 }
 
 .botoes:hover {
     background-color: crimson;
     transform: translate(3px, -3px);
     box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.400);
-}
-
-.material-icons {
-    font-size: 22px;
-    transform: translateY(3px);
 }
 
 #conteudo {
@@ -85,6 +86,11 @@ body, html {
     background-color: rgb(109, 0, 22);
 }
 
+.titulo {
+    font-size: 45px;
+    text-align: center;
+}
+
 #section-sobre {
     display: flex;
     flex-direction: column;
@@ -94,10 +100,9 @@ body, html {
     z-index: 1;
 }
 
-#section-sobre > h1 {
-    justify-content: flex-start;
-    font-size: 40px;
-    padding: 100px 0px 110px 0px;
+#section-sobre > h2 {
+    font-size: 30px;
+    padding: 50px 0px 50px 0px;
 }
 
 #section-sobre > p {
@@ -112,7 +117,7 @@ body, html {
 #container-barra-progresso {
     width: 500px;
     position: absolute;
-    left: 50px;
+    left: center;
     top: 450px;
     
     display: flex;
