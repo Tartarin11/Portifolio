@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/* Estilos Gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Barra de Navegação Fixa */
+.nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0px;
+    z-index: 1000;
+
+}
+
+.nav h1 {
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    margin-right: 45px;
+    padding: 0;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos das Seções */
+main {
+    padding-top: 60px; /* Para evitar sobreposição da navegação */
+}
+
+.content-section {
+    padding: 60px 20px;
+    min-height: 100vh; /* Cada seção ocupa pelo menos 100% da altura da janela */
+    border-bottom: 1px solid #ddd;
+}
+
+#section1 {
+    background-color: #f4f4f4;
+}
+
+#section2 {
+    background-color: #e2e2e2;
+}
+
+#section3 {
+    background-color: #d1d1d1;
+}
+
+#section4 {
+    background-color: #c0c0c0;
+}
