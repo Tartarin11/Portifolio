@@ -9,7 +9,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #333;
+    background-color: rgb(29, 29, 29);
     padding: 5px 0px;
     z-index: 1000;
     box-sizing: border-box;
@@ -62,18 +62,80 @@ main {
     border-bottom: 1px solid #ddd;
 }
 
-#section1 {
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 39, 39);
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    gap: 50px;
+}
+
+.home-img img { 
+    max-width: 500px; /*-----------------*/
+    width: 100%; /*-----------------*/
+    height: auto; /*-----------------*/
+}
+
+.home-text {
+    color: #fff;
+    text-align: left; /*-----------------*/
+}
+
+.home-text h1 {
+    font-size: 24px;
+    margin-bottom: 10px; /*-----------------*/
+}
+
+.home-text h2 {
+    font-size: 36px;
+    margin-bottom: 30px; /*-----------------*/
+    color: crimson;
+}
+
+.home-text p {
+    font-size: 18px;
+    margin-bottom: 30px; /*-----------------*/
+}
+
+.button {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.linkedin:hover {
+    background-color: #0077b5;
+}
+
+.github:hover {
+    background-color: #333;
+}
+
+#sobre {
     background-color: gray;
 }
 
-#section2 {
+#habilidades {
     background-color: gray;
 }
 
-#section3 {
-    background-color: gray;
-}
-
-#section4 {
+#projetos {
     background-color: gray;
 }
