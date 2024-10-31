@@ -3,94 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio 222</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Portifólio 3</title>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <main>
-        <nav>
-            <section id="coluna">
-                <img src="imagens/gatito.jpg" alt="gatito">
-
-                <div id="social-links">
-                    <a href="https://github.com/Tartarin11" target="_blank"><img src="imagens/github.png" alt="github"></a>
-                    <a href="https://www.linkedin.com/in/davi-tartarini-07b18531a/"target="_blank"><img src="imagens/linkedin.png" alt="linkedin"></a>
-                    <a href="#" target="_blank"><img src="imagens/whatsapp.png" alt="whatsapp"></a>
-                </div>
-
-                <button class="botoes" onclick="scrollToSection('section-sobre')"><i class="material-icons">person</i> Sobre</button>
-                <button class="botoes" onclick="scrollToSection('section-experiencia')"><i class="material-icons">wysiwyg</i> Experiencia</button>
-                <button class="botoes" onclick="scrollToSection('section-projetos')"><i class="material-icons">dynamic_feed</i> Projetos</button>
-            </section>
+    <header class="nav">
+        <nav class="nav-content">
+            <div class="nav-esquerda">
+                <span>&lt;DT/&gt;</span>
+            </div>
+            <ul class="nav-direita">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#sobre">SOBRE MIM</a></li>
+                <li><a href="#habilidades">HABILIDADES</a></li>
+                <li><a href="#projetos">PROJETOS</a></li>
+            </ul>
         </nav>
-
-        <section id="conteudo">
-            <section id="section-sobre" class="section">
-                <h1 class="titulo">Sobre mim</h1>
-                <h2>Davi Tartarini da Silva</h2>
-                <p>Óla, sou o Davi, tenho 19 anos, sou um progamador iniciante em busca da minha primeira oportunidade como um Dev Front-End. Tenho pouca experiencia como desenvolvedor, mas estou disposto a aprender e evoluir. </p>
-
-                
-                <div id="container-barra-progresso">
-                    <div class="barra-progresso" style="--color:#ffa500; --value:90">
-                        <h3>90 <span>%</span></h3>
-                        <p>HTML</p>
-                    </div>
-                    <div class="barra-progresso" style="--color:#1e90ff; --value:80">
-                        <h3>80 <span>%</span></h3>
-                        <p>CSS</p>
-                    </div>
-                    <div class="barra-progresso" style="--color: yellow; --value:10 ">
-                        <h3>10 <span>%</span></h3>
-                        <p>JS</p>
-                    </div>
+    </header>
+    <main>
+        <section id="home" class="content-section">
+            <div class="home-container">
+                <div class="home-img">
+                    <img src="imagens/gatito.jpg" alt="gatito">
                 </div>
-            </section>
-
-            <section id="section-experiencia" class="section">
-                <h1 class="titulo">Tecnologias</h1>
-                <div id="container-tecnologias">
-                    <div class="tecnologia">
-                        <img src="imagens/html-5.png" alt="HTML">
-                        <ul>
-                            <li>sdjgfzsdjosdzfjsdfpoopsds</li>
-                            <li>sdjgfzsdjosdzfjsdfpoopsds</li>
-                            <li>sdjgfzsdjosdzfjsdfpoopsds</li>
-                        </ul>
-                    </div>
-
-                    <div class="tecnologia">
-                        <img src="imagens/css-3.png" alt="CSS">
-                            <ul>
-                                <li>sdjgfzsdjosdzfjsdfpoopsds</li>
-                                <li>sdjgfzsdjosdzfjsdfpoopsds</li>
-                                <li>sdjgfzsdjosdzfjsdfpoopsds</li>
-                            </ul>
-                    </div>
-
-                    <div class="tecnologia">
-                        <img src="imagens/js.png" alt="JS">
-                            <ul>
-                                <li>sdjgfzsdjosdzfjsdfpoopsds</li>
-                                <li>sdjgfzsdjosdzfjsdfpoopsds</li>
-                                <li>sdjgfzsdjosdzfjsdfpoopsds</li>
-                            </ul>
-                    </div>
-
+                <div class="home-text">
+                    <h1>OLÁ, EU SOU</h1>
+                    <h2>Davi Tartarini</h2>
+                    <p>DESENVOLVEDOR FRONT-END</p>
+                    <p>
+                        <div class="btn-container">
+                            <a href="#" class="btn linkedin"><img src="imagens/linkedin.png" alt="linkedin"></a>
+                        </div>
+                        <div class="btn-container">
+                            <a href="#" class="btn github"><img src="imagens/github.png" alt="github"></a>
+                        </div>
+                        <div class="btn-container">
+                            <a href="#" class="btn whatsapp"><img src="imagens/whatsapp.png" alt="whatsapp"></a>
+                        </div>
+                    </p>
                 </div>
-            </section>
-
-            <section id="section-projetos" class="section">
-                <h1 class="titulo">Projetos</h1>
-            </section>
+            </div>
         </section>
-        
+
+        <section id="sobre" class="content-section">
+            <h1>SOBRE MIM</h1>
+            <p>informações</p>
+        </section>
+
+        <section id="habilidades" class="content-section">
+            <h1>Habilidades</h1>
+            <p>informações</p>
+        </section>
+
+        <section id="projetos" class="content-section">
+            <h1>PROJETOS</h1>
+            <p>informações</p>
+        </section>
     </main>
-    <script>
-        function scrollToSection(sectionId) {
-            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
+    
 </body>
 </html>
