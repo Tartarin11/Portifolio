@@ -71,6 +71,12 @@ nav ul li a::after {
     transform: scaleX(1);
 }
 
+.nav-direita a.active {
+    color: white; /* Altere a cor do link ativo */
+    font-weight: bold; /* Torne o texto mais destacado */
+    border-bottom: 2px solid white; /* Adicione uma linha abaixo */
+}
+
 main {
     padding-top: 60px;
 }
@@ -99,7 +105,7 @@ main {
 }
 
 .home-img img { 
-    max-width: 380px;
+    max-width: 380px; 
     width: 100%;
     height: auto;
     border-radius: 50%; 

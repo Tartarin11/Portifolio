@@ -46,8 +46,16 @@
         </section>
 
         <section id="sobre" class="content-section">
-            <h1>SOBRE MIM</h1>
-            <p>informações</p>
+            <h1>Sobre Mim</h1>
+
+            <div class="sobre-container">
+                <div class="sobre-texto">
+                    <p>Olá, sou Davi Tartarini da Silva, um desenvolvedor Front-End Iniciante, e estou cada vez mais apaixonado por esse mundo!</p>
+                    <p>Atualmente, estou me especializando em HTML, CSS e JavaScript, com o objetivo de construir novas experiências digitais e aumentar meu conhecimento.</p>
+                    <p>Quando não estou programando, gosto de jogar videogames, assistir séries e filmes e de socializar com amigos .</p>
+                </div>
+            </div>
+
         </section>
 
         <section id="habilidades" class="content-section">
@@ -60,6 +68,34 @@
             <p>informações</p>
         </section>
     </main>
+
+    <script>
+        document.addEventListener("scroll", () => {
+            const sections = document.querySelectorAll("section"); // Seleciona todas as seções
+            const navLinks = document.querySelectorAll(".nav-direita a"); // Seleciona todos os links do menu
+    
+            let currentSection = ""; // Variável para armazenar a seção atual
+    
+            // Loop pelas seções para verificar qual está visível
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop; // Obtém a distância da seção até o topo da página
+                const sectionHeight = section.offsetHeight; // Altura da seção
+    
+                // Verifica se o scroll está dentro dos limites da seção
+                if (pageYOffset >= sectionTop - 60 && pageYOffset < sectionTop + sectionHeight - 60) {
+                    currentSection = section.getAttribute("id"); // Pega o ID da seção visível
+                }
+            });
+    
+            // Remove a classe "active" de todos os links e adiciona no atual
+            navLinks.forEach(link => {
+                link.classList.remove("active");
+                if (link.getAttribute("href").includes(currentSection)) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
     
 </body>
 </html>
